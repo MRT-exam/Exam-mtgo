@@ -1,0 +1,89 @@
+version: '3.8'
+services:
+  eureka-server:
+    container_name: eureka-server
+    build:
+      context: ./exam-discovery-server-2
+      dockerfile: Dockerfile
+    ports: 
+      - "8761:8761"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    networks:
+      - exam-mtgo
+
+  api-gateway:
+    container_name: api-gateway
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8181:8080"
+    expose:
+      - "8181"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    networks:
+      - exam-mtgo
+
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - exam-mtgo
+
+  mysqldb:
+    container_name: mysqldb
+    image: mysql
+    restart: unless-stopped
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: order_service
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin1234
+      MYSQL_ROOT_PASSWORD: root1234
+    networks:
+      - exam-mtgo
+
+  order-service-app:
+    container_name: order-service
+    build:
+      context: ./order-service
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: mysqldb
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin1234
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+    networks:
+      - exam-mtgo
+
+  mongo_db:
+    image: mongo:latest
+    container_name: "mongo"
+    ports:
+      - "27017:27017"
+    networks:
+      - exam-mtgo
+
+  exam-restaurant-service:
+    container_name: restaurant-service
+    build:
+      context: ./exam-restaurant-service
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+        SPRING_PROFILES_ACTIVE: docker
+    networks:
+      - exam-mtgo
+
+networks:
+  exam-mtgo:
