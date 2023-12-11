@@ -1,10 +1,9 @@
 # Exam-mtgo
-Thomas - cph-ta181
-Markus - cph-ma587
-Rasmus - cph-rd92
+Thomas - cph-ta181  
+Markus - cph-ma587  
+Rasmus - cph-rd92  
 
-
-
+To run the docker-compose.yml, clone the projects below into a parent directory and run the docker compose up -d command from the parent directory.
 
 [Order Service](https://github.com/MRT-exam/exam-order-service)\
 [Restaurant Service](https://github.com/MRT-exam/exam-restaurant-service)\
