@@ -3,7 +3,10 @@ Thomas - cph-ta181
 Markus - cph-ma587  
 Rasmus - cph-rd92  
 
-To run the docker-compose.yml, clone the projects below into a parent directory and run the docker compose up -d command from the parent directory.
+# Setup
+Clone this project or download as zip and use as parent directory.  
+Clone the proejcts listed below into the parent directory.  
+Run the docker compose up -d command from the parent directory.
 
 [Order Service](https://github.com/MRT-exam/exam-order-service)\
 [Restaurant Service](https://github.com/MRT-exam/exam-restaurant-service)\
