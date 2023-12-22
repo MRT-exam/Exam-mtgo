@@ -10,13 +10,13 @@ Rasmus - cph-rd92
 
 ### 3.  Run the docker compose up -d command from the parent directory ### 
 
-[Discovery Server](https://github.com/MRT-exam/exam-discovery-server)\  
+[Discovery Server](https://github.com/MRT-exam/exam-discovery-server)  
 
-[API-gateway](https://github.com/MRT-exam/exam-api-gateway)\  
+[API-gateway](https://github.com/MRT-exam/exam-api-gateway)  
 
-[Order Service](https://github.com/MRT-exam/exam-order-service)\  
+[Order Service](https://github.com/MRT-exam/exam-order-service)  
 
-[Restaurant Service](https://github.com/MRT-exam/exam-restaurant-service)\  
+[Restaurant Service](https://github.com/MRT-exam/exam-restaurant-service)  
 
 [Delivery Service](https://github.com/MRT-exam/exam-delivery-service)
 
