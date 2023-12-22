@@ -4,11 +4,11 @@ Markus - cph-ma587
 Rasmus - cph-rd92  
 
 # Setup
-1. #Clone this project or download as zip and use as parent directory.  
+1. ###Clone this project or download as zip and use as parent directory### 
 
-2. #Clone the projects listed below into the parent directory.  
+2. ###Clone the projects listed below into the parent directory### 
 
-3. #Run the docker compose up -d command from the parent directory.  
+3. ###Run the docker compose up -d command from the parent directory### 
 
 
 [Order Service](https://github.com/MRT-exam/exam-order-service)\
