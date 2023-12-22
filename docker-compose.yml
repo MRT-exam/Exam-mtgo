@@ -1,9 +1,10 @@
 version: '3.8'
 services:
+  # System Integration Services
   eureka-server:
     container_name: eureka-server
     build:
-      context: ./exam-discovery-server-2
+      context: ./exam-discovery-server
       dockerfile: Dockerfile
     ports: 
       - "8761:8761"
@@ -15,7 +16,7 @@ services:
   api-gateway:
     container_name: api-gateway
     build:
-      context: ./api-gateway
+      context: ./exam-api-gateway
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:
@@ -36,8 +37,9 @@ services:
     networks:
       - exam-mtgo
 
-  mysqldb:
-    container_name: mysqldb
+  # Microservices & Databases
+  mysqldb-order-service:
+    container_name: mysqldb-order-service
     image: mysql
     restart: unless-stopped
     ports:
@@ -53,11 +55,11 @@ services:
   order-service-app:
     container_name: order-service
     build:
-      context: ./order-service
+      context: ./exam-order-service
       dockerfile: Dockerfile
     restart: unless-stopped
     environment:
-      MYSQL_HOST: mysqldb
+      MYSQL_HOST: mysqldb-order-service
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin1234
       SPRING_PROFILES_ACTIVE: docker
@@ -74,7 +76,7 @@ services:
     networks:
       - exam-mtgo
 
-  exam-restaurant-service:
+  restaurant-service-app:
     container_name: restaurant-service
     build:
       context: ./exam-restaurant-service
@@ -84,6 +86,81 @@ services:
         SPRING_PROFILES_ACTIVE: docker
     networks:
       - exam-mtgo
+
+  mysqldb-delivery-service:
+    container_name: mysqldb-delivery-service
+    image: mysql
+    restart: unless-stopped
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_DATABASE: delivery_service
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin1234
+      MYSQL_ROOT_PASSWORD: root1234
+    networks:
+      - exam-mtgo
+
+  delivery-service-app:
+    container_name: delivery-service
+    build:
+      context: ./exam-delivery-service
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      MYSQL_HOST: mysqldb-delivery-service
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin1234
+      SPRING_PROFILES_ACTIVE: docker
+      SPRING_RABBITMQ_HOST: rabbitmq
+      SPRING_RABBITMQ_PORT: 5672
+    networks:
+      - exam-mtgo
+
+  # Performance & Monitoring
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+     - ./prometheus:/etc/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9090:9090
+    depends_on:
+      - order-service-app
+      - restaurant-service-app
+      - delivery-service-app
+    networks:
+      - exam-mtgo
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    user: "1000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=password
+    depends_on:
+      - prometheus
+    ports:
+      - 3000:3000
+    links:
+      - prometheus:prometheus
+    networks:
+      - exam-mtgo
+
+  # Security
+  # 0authKeycloak:
+  #   container_name: keycloak
+  #   image: quay.io/keycloak/keycloak:23.0.1
+  #   ports:
+  #     - "8282:8080"
+  #   environment:
+  #     - KEYCLOAK_ADMIN=admin
+  #     - KEYCLOAK_ADMIN_PASSWORD=admin
+  #   command: start-dev
+  #   networks:
+  #     - exam-mtgo
 
 networks:
   exam-mtgo:
