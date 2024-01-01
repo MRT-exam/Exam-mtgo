@@ -1,63 +1,47 @@
-# Exam-mtgo #
-Thomas - cph-ta181  
-Markus - cph-ma587  
-Rasmus - cph-rd92  
+# Exam-mtgo
 
-## Table of contents
-- [1](#step-1)
-  - [Setup:](#setup)
-- [2](#step-2)
-  - [Microservices:](#micro-services)
-- [3](#step-3)
-  - [Diagram & Design](#project-diagrams)
-  - [Domain model](#domain-models)
-  - [C4 model](#c4-model)
-  - [Other diagrams](#other-diagram)
-- [4](#step-4)
-  - [Legacy System:](#legacy-system)
-- [5](#step-5)
-  - [Pipeline:](#pipeline)
-- [6](#step-6)
-  - [Project solution & Argumentation of Choices:](#Project-resume)
+Team Members:
+- Thomas - cph-ta181
+- Markus - cph-ma587
+- Rasmus - cph-rd92
 
-# 1
-# Setup:
-1.  Clone this project or download as zip and use as parent directory ### 
+## Table of Contents
+- [Setup](#setup)
+- [Microservices](#microservices)
+- [Diagrams](#diagrams)
+- [Legacy System](#legacy-system)
+- [Pipeline](#pipeline)
+- [Project Solution](#project-solution)
 
-2.  Clone the projects listed below into the parent directory ### 
+# Setup
 
-3.  Run the docker compose up -d command from the parent directory ### 
+1. Clone this project or download it as a zip and use it as the parent directory.
 
+2. Clone the following projects into the parent directory.
 
-# 2
-# Microservices:
+3. Run the `docker-compose up -d` command from the parent directory.
 
-[Discovery Server](https://github.com/MRT-exam/exam-discovery-server)  
+# Microservices
 
-[API-gateway](https://github.com/MRT-exam/exam-api-gateway)  
+- [Discovery Server](https://github.com/MRT-exam/exam-discovery-server)
+- [API Gateway](https://github.com/MRT-exam/exam-api-gateway)
+- [Order Service](https://github.com/MRT-exam/exam-order-service)
+- [Restaurant Service](https://github.com/MRT-exam/exam-restaurant-service)
+- [Delivery Service](https://github.com/MRT-exam/exam-delivery-service)
+- [Notification Service](https://github.com/MRT-exam/exam-notification-service)
 
-[Order Service](https://github.com/MRT-exam/exam-order-service)  
+# Diagrams
 
-[Restaurant Service](https://github.com/MRT-exam/exam-restaurant-service)  
+- [Diagram & Design](#project-diagrams)
+- [Domain Model](#domain-models)
+- [C4 Model](#c4-model)
+- [Other Diagrams](#other-diagram)
 
-[Delivery Service](https://github.com/MRT-exam/exam-delivery-service)
+# Legacy System
 
-[Notification Service](https://github.com/MRT-exam/exam-notification-service)
+# Pipeline
 
+![Pipeline Screenshot](pipeline.png)
 
-# 3
-# Diagrams:
+# Project Solution
 
-
-
-# 4
-# Legacy system:
-
-# 5
-# Pipeline:
-
-![Screenshot](pipeline.png)
-Pipeline
-
-# 6
-# Project solution:
