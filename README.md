@@ -5,13 +5,20 @@ Rasmus - cph-rd92
 
 ## Table of contents
 - [Step 1](#step-1)
-  - [Microservices:](#micro-services)
+  - [Setup:](#setup)
 - [Step 2](#step-2)
-  - [Diagrams:](#project-diagrams)
+  - [Microservices:](#micro-services)
 - [Step 3](#step-3)
+  - [Diagrams:](#project-diagrams)
+- [Step 4](#step-4)
+  - [Legacy System:](#legacy-system)
+- [Step 5](#step-5)
+  - [Pipeline:](#pipeline)
+- [Step 6](#step-6)
   - [Project solution & Argumentation of Choices:](#Project-resume)
 
-## Setup ##
+# Step 1
+## Setup:
 ### 1.  Clone this project or download as zip and use as parent directory ### 
 
 ### 2.  Clone the projects listed below into the parent directory ### 
@@ -19,7 +26,7 @@ Rasmus - cph-rd92
 ### 3.  Run the docker compose up -d command from the parent directory ### 
 
 
-# Step 1
+# Step 2
 ## Microservices:
 
 [Discovery Server](https://github.com/MRT-exam/exam-discovery-server)  
@@ -35,11 +42,19 @@ Rasmus - cph-rd92
 [Notification Service](https://github.com/MRT-exam/exam-notification-service)
 
 
-# Step 2
+# Step 3
 ## Diagrams:
+
+
+
+# Step 4
+## Legacy system:
+
+# Step 5
+## Pipeline:
 
 ![Screenshot](pipeline.png)
 Pipeline
 
-# Step 2
+# Step 6
 ## Project solution:
