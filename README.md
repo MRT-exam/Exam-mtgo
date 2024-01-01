@@ -18,16 +18,16 @@ Rasmus - cph-rd92
   - [Project solution & Argumentation of Choices:](#Project-resume)
 
 # Step 1
-## Setup:
-### 1.  Clone this project or download as zip and use as parent directory ### 
+# Setup:
+1.  Clone this project or download as zip and use as parent directory ### 
 
-### 2.  Clone the projects listed below into the parent directory ### 
+2.  Clone the projects listed below into the parent directory ### 
 
-### 3.  Run the docker compose up -d command from the parent directory ### 
+3.  Run the docker compose up -d command from the parent directory ### 
 
 
 # Step 2
-## Microservices:
+# Microservices:
 
 [Discovery Server](https://github.com/MRT-exam/exam-discovery-server)  
 
@@ -43,18 +43,18 @@ Rasmus - cph-rd92
 
 
 # Step 3
-## Diagrams:
+# Diagrams:
 
 
 
 # Step 4
-## Legacy system:
+# Legacy system:
 
 # Step 5
-## Pipeline:
+# Pipeline:
 
 ![Screenshot](pipeline.png)
 Pipeline
 
 # Step 6
-## Project solution:
+# Project solution:
