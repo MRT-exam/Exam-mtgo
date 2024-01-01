@@ -9,8 +9,13 @@ Team Members:
 - [Setup](#setup)
 - [Microservices](#microservices)
 - [Diagrams & Design](#diagrams)
-- [Legacy System](#legacy-system)
+  - [Domain Model]
+  - [C4 Model]
+  - [Other Diagrams]
+  - [Architechture]
+  - [Legacy System](#legacy-system)
 - [Pipeline](#pipeline)
+  - [Dockerhub]
 - [Project Solution](#project-solution)
 
 # Setup
@@ -40,6 +45,7 @@ Team Members:
 # Legacy System
 
 # Pipeline
+Dockerhub: https://hub.docker.com/repositories/theagns
 
 ![Pipeline Screenshot](pipelines.png)
 
