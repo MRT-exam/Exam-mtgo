@@ -37,8 +37,11 @@ Team Members:
 
 # Diagrams & Design
 
-#### Domain Model
-#### C4 Model
+#### Domain Model  
+![Domain Model](Domain Model.png)
+![Subdomains](Subdomains.png)
+#### Architecture  
+![Architecture Diagram](Architecture Diagram.png)
 #### Other Diagrams
 #### Architechture
 
