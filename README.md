@@ -38,10 +38,10 @@ Team Members:
 # Diagrams & Design
 
 #### Domain Model  
-![Domain Model](Domain_Model.png)
+![Domain Model](DomainModel.png)
 ![Subdomains](Subdomains.png)
 #### Architecture  
-![Architecture_Diagram](Architecture Diagram.png)
+![Architecture_Diagram](ArchitectureDiagram.png)
 #### Other Diagrams
 #### Architechture
 
