@@ -41,7 +41,7 @@ Team Members:
 
 # Pipeline
 
-![Pipeline Screenshot](pipeline.png)
+![Pipeline Screenshot](pipelines.png)
 
 # Project Solution
 
