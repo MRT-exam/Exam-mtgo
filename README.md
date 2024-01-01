@@ -37,10 +37,10 @@ Team Members:
 
 # Diagrams & Design
 
-- [Domain Model](#domain-model)
-- [C4 Model](#C4)
-- [Other Diagrams](#other)
-- [Architechture](#architechture)
+#### Domain Model
+#### C4 Model
+#### Other Diagrams
+#### Architechture
 
 # Legacy System
 
