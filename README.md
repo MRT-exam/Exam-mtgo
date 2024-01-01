@@ -9,11 +9,11 @@ Team Members:
 - [Setup](#setup)
 - [Microservices](#microservices)
 - [Diagrams & Design](#diagrams)
-  - [Domain Model]
-  - [C4 Model]
-  - [Other Diagrams]
-  - [Architechture]
-  - [Legacy System](#legacy-system)
+  - [Domain Model](#domain-model)
+  - [C4 Model](#C4)
+  - [Other Diagrams](#Other)
+  - [Architechture](#architechture)
+- [Legacy System](#legacy-system)
 - [Pipeline](#pipeline)
   - [Dockerhub]
 - [Project Solution](#project-solution)
