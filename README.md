@@ -6,14 +6,22 @@ Rasmus - cph-rd92
 ## Table of contents
 - [Step 1](#step-1)
   - [Setup:](#setup)
+
 - [Step 2](#step-2)
   - [Microservices:](#micro-services)
+
 - [Step 3](#step-3)
-  - [Diagrams:](#project-diagrams)
+  - [Diagram & Design](#project-diagrams)
+  - [Domain models](#domain-models)
+  - [C4 model](#c4-model)
+  - [Other diagrams](#other-diagram)
+
 - [Step 4](#step-4)
   - [Legacy System:](#legacy-system)
+
 - [Step 5](#step-5)
   - [Pipeline:](#pipeline)
+
 - [Step 6](#step-6)
   - [Project solution & Argumentation of Choices:](#Project-resume)
 
