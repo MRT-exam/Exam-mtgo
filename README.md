@@ -20,3 +20,4 @@ Rasmus - cph-rd92
 
 [Delivery Service](https://github.com/MRT-exam/exam-delivery-service)
 
+[Notification Service](https://github.com/MRT-exam/exam-notification-service)
