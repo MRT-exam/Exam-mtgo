@@ -35,15 +35,19 @@ Team Members:
 - [Delivery Service](https://github.com/MRT-exam/exam-delivery-service)
 - [Notification Service](https://github.com/MRT-exam/exam-notification-service)
 
-# Diagrams & Design
+# Design
 
-#### Domain Model  
+### User Stories  
+
+### Use Case Diagram  
+
+### Domain Model  
 ![Domain Model](DomainModel.png)
+#### Subdomains
 ![Subdomains](Subdomains.png)
-#### Architecture  
+### Architecture  
 ![Architecture_Diagram](ArchitectureDiagram.png)
-#### Other Diagrams
-#### Architechture
+### Other Diagrams
 
 # Legacy System
 
