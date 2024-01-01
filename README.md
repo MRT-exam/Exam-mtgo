@@ -11,7 +11,7 @@ Team Members:
 - [Diagrams & Design](#diagrams)
   - [Domain Model](#domain-model)
   - [C4 Model](#C4)
-  - [Other Diagrams](#Other)
+  - [Other Diagrams](#other)
   - [Architechture](#architechture)
 - [Legacy System](#legacy-system)
 - [Pipeline](#pipeline)
@@ -37,10 +37,10 @@ Team Members:
 
 # Diagrams & Design
 
-- Domain Model
-- C4 Model
-- Other Diagrams
-- Architechture
+- [Domain Model](#domain-model)
+- [C4 Model](#C4)
+- [Other Diagrams](#other)
+- [Architechture](#architechture)
 
 # Legacy System
 
