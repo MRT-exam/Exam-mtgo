@@ -8,7 +8,7 @@ Team Members:
 ## Table of Contents
 - [Setup](#setup)
 - [Microservices](#microservices)
-- [Diagrams](#diagrams)
+- [Diagrams & Design](#diagrams)
 - [Legacy System](#legacy-system)
 - [Pipeline](#pipeline)
 - [Project Solution](#project-solution)
@@ -30,12 +30,12 @@ Team Members:
 - [Delivery Service](https://github.com/MRT-exam/exam-delivery-service)
 - [Notification Service](https://github.com/MRT-exam/exam-notification-service)
 
-# Diagrams
+# Diagrams & Design
 
-- [Diagram & Design](#project-diagrams)
-- [Domain Model](#domain-models)
-- [C4 Model](#c4-model)
-- [Other Diagrams](#other-diagram)
+- Domain Model
+- C4 Model
+- Other Diagrams
+- Architechture
 
 # Legacy System
 
