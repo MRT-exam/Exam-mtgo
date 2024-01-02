@@ -8,6 +8,7 @@
 ## Table of Contents
 - [Setup](#setup)
 - [Microservices](#microservices)
+- [Project Description](#description)
 - [Design](#design)
   - [User Stories](#user-stories)
   - [Use Case Diagram](#usecase-diagram)
@@ -36,6 +37,21 @@
 - [Restaurant Service](https://github.com/MRT-exam/exam-restaurant-service)
 - [Delivery Service](https://github.com/MRT-exam/exam-delivery-service)
 - [Notification Service](https://github.com/MRT-exam/exam-notification-service)
+
+# Project Description  
+This is a microservices project for ordering food called MTGO (Mad To Go) which utilizes Docker for containerizing each service, uses Euerka Discovery for scaling.  
+
+## Restaurant Service  
+Handles and provides Restaurant & Menu Item data.  
+
+## Order Service  
+Creates and stores new Orders while also handling Order Status updates.  
+
+## Delivery Service  
+Creates and stores new Deliveries while also assigning Couriers and registering Delivery Updates.  
+
+## Notification Service  
+Sends event-based notifications to relevant Users.  
 
 # Design
 
