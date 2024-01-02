@@ -39,7 +39,8 @@
 - [Notification Service](https://github.com/MRT-exam/exam-notification-service)
 
 # Project Description  
-This is a microservices project for ordering food called MTGO (Mad To Go) which utilizes Docker for containerizing each service, uses Euerka Discovery for scaling.  
+This is a microservices project called MTGO (Mad To Go) which is used for ordering food from different restaurant.  
+The solution utilizes Docker for containerizing each service and uses Euerka Discovery Server in collaboration with API-Gateway for scaling.  
 
 ### Restaurant Service  
 Handles and provides Restaurant & Menu Item data.  
