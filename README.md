@@ -51,11 +51,14 @@ Handles and provides Restaurant & Menu Item data.
 
 ### Order Service  
 Creates and stores new Orders while also handling Order Status updates.  
-![Restaurant API's](images/orderEndpoints.png)
+![Order API's](images/orderEndpoints.png)
+
+Graphql query example:
+![Graphql Query](images/graphql.png)
 
 ### Delivery Service  
 Creates and stores new Deliveries while also assigning Couriers and registering Delivery Updates.  
-![Restaurant API's](images/deliveryEndpoints.png)
+![Delivery API's](images/deliveryEndpoints.png)
 
 ### Notification Service  
 Sends event-based notifications to relevant Users.  
