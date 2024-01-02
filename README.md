@@ -57,6 +57,8 @@ Sends event-based notifications to relevant Users.
 # Design
 
 ## User Stories  
+Some of the User Stories have been defined based on the assumption that there will be a GUI for the Customer to interact with. This will not implemented in this project, but some of the User Story definitions remain this way to ensure that the requirements are easy to understand.  
+
 ### US1 - Show Restaurants  
 As a Customer, I want to see a list of Restaurants, so that I can select a Restaurant that I want to order
 food from.  
