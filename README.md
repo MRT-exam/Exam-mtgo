@@ -141,7 +141,7 @@ and the Customer”.*
 ## Legacy System
 To allow our users to view prices in other currencies we are using an external service/legacy System to get the current exchange rate.
 The legacy system exposes a REST endpoint which we call including the currency which we wish to convert to.\
-The REST call is made [Here] (https://github.com/MRT-exam/exam-restaurant-service/blob/main/src/main/java/com/mtgo/exam/restaurantservice/service/RestaurantService.java)(Line 114)
+The REST call is made [Here](https://github.com/MRT-exam/exam-restaurant-service/blob/main/src/main/java/com/mtgo/exam/restaurantservice/service/RestaurantService.java) (Line 114)
 
 
 ## Pipeline
