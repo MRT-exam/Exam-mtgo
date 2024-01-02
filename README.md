@@ -41,16 +41,16 @@
 # Project Description  
 This is a microservices project for ordering food called MTGO (Mad To Go) which utilizes Docker for containerizing each service, uses Euerka Discovery for scaling.  
 
-## Restaurant Service  
+### Restaurant Service  
 Handles and provides Restaurant & Menu Item data.  
 
-## Order Service  
+### Order Service  
 Creates and stores new Orders while also handling Order Status updates.  
 
-## Delivery Service  
+### Delivery Service  
 Creates and stores new Deliveries while also assigning Couriers and registering Delivery Updates.  
 
-## Notification Service  
+### Notification Service  
 Sends event-based notifications to relevant Users.  
 
 # Design
