@@ -106,6 +106,7 @@ ERED, then delivery status will be updated to: DELIVERED and a notification is s
 and the Customer”.*  
 
 ### Use Case Diagram  
+![Use Case Diagram](MTGOUseCaseDiagram.png)
 
 ### Domain Model  
 ![Domain Model](DomainModel.png)
