@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "a1bc9a8f-5cfa-4d13-892e-629f7758d828",
+		"name": "RestaurantGateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17774803"
+	},
+	"item": [
+		{
+			"name": "Get restaurants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/api/restaurants/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"restaurants",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create-product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Iphone20\",\n    \"description\": \"god\",\n    \"price\": 10000,\n    \"restaurantId\": \"6576efb0d2758936f7b3badb\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/api/restaurants/menuItem/create?restaurantId=6576efb0d2758936f7b3badb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"restaurants",
+						"menuItem",
+						"create"
+					],
+					"query": [
+						{
+							"key": "restaurantId",
+							"value": "6576efb0d2758936f7b3badb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/api/restaurants/menuItem/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"restaurants",
+						"menuItem",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product by restaurant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/api/restaurants/menuItem/byRestaurant?restaurantId=6576efb0d2758936f7b3badb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"restaurants",
+						"menuItem",
+						"byRestaurant"
+					],
+					"query": [
+						{
+							"key": "restaurantId",
+							"value": "6576efb0d2758936f7b3badb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders/new endpoint",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"restaurantId\": \"restaurant4\",\n  \"orderDateTime\": \"2023-12-04-15:30\",\n  \"orderLineDtoList\": [\n    {\n      \"itemId\": \"mongoDbItemId\",\n      \"itemName\": \"Kage\",\n      \"price\": 200.00,\n      \"quantity\" : 3\n    }\n  ],\n  \"comment\": \"Uden birkes\",\n  \"customerInfoDto\": {\n    \"firstName\": \"Jane\",\n    \"lastName\": \"Doe\",\n    \"phone\": 43547690,\n    \"address\": \"Elm Street 4\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/api/orders/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"orders",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\n    restaurantById(id: \"658ab36cb8889d21d159b12b\")\n    id\n    name\n    email\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQL GetMenuItemByRestaurant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\n  menuItemsByRestaurantId(restaurantId: \"658ab36cb8889d21d159b12b\") {\n    id\n    name\n    description\n    price\n  }\n}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQL GetRestaurants",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query{\n    restaurantById(id: \"658ab36cb8889d21d159b12b\")\n    id\n    name\n    email\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/graphiql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"graphiql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GraphQL GetOrderById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n  getOrderById(orderId: 102) {\n    id\n    orderNumber\n    status\n    orderDateTime\n    orderLineDtoList {\n      itemId\n      itemName\n      price\n      quantity\n    }\n    totalPrice\n    comment\n    customerInfoDto {\n      firstName\n      lastName\n      phone\n      address\n    }\n    restaurantId\n  }\n}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/graphql-order-service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"graphql-order-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PopulateRestaurants",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8181/api/restaurants/populate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"api",
+						"restaurants",
+						"populate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

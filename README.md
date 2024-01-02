@@ -46,6 +46,7 @@ The solution utilizes Docker for containerizing each service and uses Euerka Dis
 
 ### Restaurant Service  
 Handles and provides Restaurant & Menu Item data.  
+![Restaurant API's](images/endpoints.png)
 
 ### Order Service  
 Creates and stores new Orders while also handling Order Status updates.  
