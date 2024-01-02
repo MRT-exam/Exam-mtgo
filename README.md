@@ -18,11 +18,10 @@
   - [Domain Model](#domain-model)
   - [Subdomains](#subdomains)
   - [Architecture](#architecture)
-  - [Other Diagrams](#other)
+  - [Docker Structure](#docker)
 - [Legacy System](#legacy-system)
 - [Pipeline](#pipeline)
   - [Dockerhub](#dockerhub)
-- [Project Solution](#project-solution)
 
 # Setup
 
