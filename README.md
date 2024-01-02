@@ -18,7 +18,7 @@
   - [Domain Model](#domain-model)
   - [Subdomains](#subdomains)
   - [Architecture](#architecture)
-  - [Docker Structure](#docker)
+  - [Docker](#docker)
 - [Legacy System](#legacy-system)
 - [Pipeline](#pipeline)
   - [Dockerhub](#dockerhub)
