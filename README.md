@@ -145,6 +145,3 @@ The REST call is made [Here](https://github.com/MRT-exam/exam-restaurant-service
 ### Dockerhub: https://hub.docker.com/repositories/theagns
 
 ![Pipeline Screenshot](pipelines.png)
-
-# Project Solution
-
