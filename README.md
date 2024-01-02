@@ -115,7 +115,6 @@ and the Customer”.*
 
 ## Architecture  
 ![Architecture_Diagram](ArchitectureDiagram.png)
-## Other Diagrams
 
 ## Legacy System
 
