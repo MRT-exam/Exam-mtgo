@@ -125,15 +125,18 @@ ERED, then delivery status will be updated to: DELIVERED and a notification is s
 and the Customer”.*  
 
 ## Domain Model  
-![Domain Model](DomainModel.png)
+![Domain Model](images/DomainModel.png)
 ### Subdomains
-![Subdomains](Subdomains.png)
+![Subdomains](images/Subdomains.png)
 
 ## Use Case Diagram  
-![Use Case Diagram](MTGOUseCaseDiagram.png)
+![Use Case Diagram](images/MTGOUseCaseDiagram.png)
 
 ## Architecture  
-![Architecture_Diagram](ArchitectureDiagram.png)
+![Architecture_Diagram](images/ArchitectureDiagram.png)
+
+## Docker
+![Docker Structure](images/docker.png)
 
 ## Legacy System
 To allow our users to view prices in other currencies we are using an external service/legacy System to get the current exchange rate.
@@ -144,4 +147,4 @@ The REST call is made [Here](https://github.com/MRT-exam/exam-restaurant-service
 ## Pipeline
 ### Dockerhub: https://hub.docker.com/repositories/theagns
 
-![Pipeline Screenshot](pipelines.png)
+![Pipeline Screenshot](images/pipelines.png)
