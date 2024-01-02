@@ -24,7 +24,7 @@ Team Members:
 
 1. Clone this project or download it as a zip and use it as the parent directory.
 
-2. Clone the the repositories listed in [Microservices](#microservices) into the parent directory.
+2. Clone the the repositories listed in [Microservices](#microservices) into (this) the parent directory.
 
 3. Run the `docker-compose up -d` command from this directory.
 
