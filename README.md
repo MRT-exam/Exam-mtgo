@@ -1,5 +1,8 @@
 # Exam-mtgo
 
+## Youtube:
+- Link: https://www.youtube.com/watch?v=G_cijeSTa3E&ab_channel=TheAgns
+
 ## Team Members:
 - Thomas - cph-ta181@cphbusiness.dk
 - Markus - cph-ma587@cphbusiness.dk
