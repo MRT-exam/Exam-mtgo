@@ -24,9 +24,9 @@ Team Members:
 
 1. Clone this project or download it as a zip and use it as the parent directory.
 
-2. Clone the following projects into the parent directory.
+2. Clone the the repositories listed in [Microservices] into the parent directory.
 
-3. Run the `docker-compose up -d` command from the parent directory.
+3. Run the `docker-compose up -d` command from this directory.
 
 # Microservices
 
@@ -105,21 +105,22 @@ to the Customer that the delivery was successful.
 ERED, then delivery status will be updated to: DELIVERED and a notification is sent to the Restaurant
 and the Customer”.*  
 
-### Use Case Diagram  
+## Domain Model  
+![Domain Model](DomainModel.png)
+### Subdomains
+![Subdomains](Subdomains.png)
+
+## Use Case Diagram  
 ![Use Case Diagram](MTGOUseCaseDiagram.png)
 
-### Domain Model  
-![Domain Model](DomainModel.png)
-#### Subdomains
-![Subdomains](Subdomains.png)
-### Architecture  
+## Architecture  
 ![Architecture_Diagram](ArchitectureDiagram.png)
-### Other Diagrams
+## Other Diagrams
 
-# Legacy System
+## Legacy System
 
-# Pipeline
-#### Dockerhub: https://hub.docker.com/repositories/theagns
+## Pipeline
+### Dockerhub: https://hub.docker.com/repositories/theagns
 
 ![Pipeline Screenshot](pipelines.png)
 
