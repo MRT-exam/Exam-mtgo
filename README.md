@@ -43,6 +43,7 @@
 # Project Description  
 This is a microservices project called MTGO (Mad To Go) which is used for ordering food from different restaurant.  
 The solution utilizes Docker for containerizing each service and uses Euerka Discovery Server in collaboration with API-Gateway for scaling.  
+For a small overview beside the pictures below of the endpoints, we have attached an Endpoints.json file with examples of our collection from Postman.
 
 ### Restaurant Service  
 Handles and provides Restaurant & Menu Item data.  
