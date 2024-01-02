@@ -1,9 +1,9 @@
 # Exam-mtgo
 
-Team Members:
-- Thomas - cph-ta181
-- Markus - cph-ma587
-- Rasmus - cph-rd92
+## Team Members:
+- Thomas - cph-ta181@cphbusiness.dk
+- Markus - cph-ma587@cphbusiness.dk
+- Rasmus - cph-rd92@cphbusiness.dk
 
 ## Table of Contents
 - [Setup](#setup)
